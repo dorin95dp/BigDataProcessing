@@ -1,13 +1,22 @@
 {
-  "name": "FAF",
-  "number": 141,
-  "students": [{
-    "name": "Dragos",
-    "surname": "Lupei",
-    "age": 20
-  }, {
-    "name": "Mihai",
-    "surname": "Trofim",
-    "age": 21
-  }]
+  "exchanges": [
+    {
+      "month": "January",
+      "EUR": 20.75,
+      "USD": 20.15,
+      "RON": 5.65
+    },
+    {
+      "month": "February",
+      "EUR": 20.65,
+      "USD": 20.11,
+      "RON": 5.55
+    },
+    {
+      "month": "March",
+      "EUR": 20.45,
+      "USD": 20.23,
+      "RON": 5.03
+    }
+  ]
 }
