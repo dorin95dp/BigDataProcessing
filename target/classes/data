@@ -1,0 +1,13 @@
+{
+  "name": "FAF",
+  "number": 141,
+  "students": [{
+    "name": "Dragos",
+    "surname": "Lupei",
+    "age": 20
+  }, {
+    "name": "Mihai",
+    "surname": "Trofim",
+    "age": 21
+  }]
+}
