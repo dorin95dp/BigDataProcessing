@@ -20,21 +20,28 @@ public class MyParser {
             ExchangeManager exchangeManager = parser.fromJson(json, ExchangeManager.class);
 
             ArrayList<Exchange> exchanges = exchangeManager.exchanges;
-            double[] eur = new double[exchanges.size()];
-            double[] usd = new double[exchanges.size()];
-            double[] ron = new double[exchanges.size()];
+            int length = exchanges.size();
+
+            double[] eur = new double[length];
+            double[] usd = new double[length];
+            double[] ron = new double[length];
+            double[] rub = new double[length];
+            double[] gbp = new double[length];
 
             int i = 0;
             for (Exchange exchange: exchanges) {
                 eur[i] = exchange.EUR;
                 usd[i] = exchange.USD;
                 ron[i] = exchange.RON;
+                rub[i] = exchange.RUB;
+                gbp[i] = exchange.GBP;
+
                 i++;
             }
 
-            double[][]indices = {eur, usd, ron};
+            double[][]matrix = {eur, usd, ron, rub, gbp};
 
-            return indices;
+            return ArrayHelper.getTransposed(matrix);
 
 
         } catch (FileNotFoundException e) {

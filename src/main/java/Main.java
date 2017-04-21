@@ -8,14 +8,9 @@ public class Main {
 
         MyParser parser = new MyParser();
         double[][]indices = parser.getMatrix();
-        
+
         // PearsonsCorrelation
         PearsonsCorrelation pearsonsCorr = new PearsonsCorrelation();
-//        double[][]indices = {{1, 2, 4, 8, 16},
-//                {2, 4, 8, 16, 32},
-//                {3, 5, 7, 9, 11},
-//                {2, 4, 6, 8, 10}
-//        };
 
         RealMatrix realMatrixCorrelations = pearsonsCorr.computeCorrelationMatrix(indices);
         double[][]correlations = realMatrixCorrelations.getData();
@@ -34,6 +29,5 @@ public class Main {
             System.out.println();
         }
     }
-
 
 }

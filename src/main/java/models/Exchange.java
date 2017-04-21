@@ -5,5 +5,7 @@ public class Exchange {
     public double EUR;
     public double USD;
     public double RON;
+    public double RUB;
+    public double GBP;
 
 }
