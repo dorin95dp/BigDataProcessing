@@ -1,5 +1,7 @@
+package models;
+
 public class Exchange {
-    public String month;
+    public String id;
     public double EUR;
     public double USD;
     public double RON;
